@@ -2,13 +2,16 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch="https://android.googlesource.com/" />
+           fetch="https://android.googlesource.com/"
+           review="android-review.googlesource.com" />
+
   <remote  name="x86"
            fetch="." />
-  <default revision="refs/tags/android-7.1.1_r4"
+
+  <default revision="refs/tags/android-7.1.1_r22"
            remote="aosp"
            sync-c="true"
-           sync-j="1" />
+           sync-j="4" />
 
   <!-- from x86 port repositories -->
   <project path="build" name="platform/build" groups="pdk,tradefed" remote="x86" revision="nougat-x86" >
