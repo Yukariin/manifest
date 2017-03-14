@@ -12,13 +12,10 @@
            fetch="https://github.com/android-ia/" />
   
   <remote  name="android-x86"
-           fetch="." />
+           fetch="http://scm.osdn.net/gitroot/android-x86/" />
   
   <remote  name="kernelorg"
            fetch="https://git.kernel.org/" />
-
-  <!-- x86 stuff -->
-  
 
   <!-- AOSP -->
   <project path="build" name="platform/build" groups="pdk,tradefed" >
@@ -556,5 +553,7 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/test/connectivity" name="platform/tools/test/connectivity" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
+  
+  <!-- x86 stuff -->
 
 </manifest>
