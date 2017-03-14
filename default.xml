@@ -17,6 +17,9 @@
   
   <remote  name="kernelorg"
            fetch="https://git.kernel.org/" />
+  
+  <remote  name="yukarin"
+           fetch="https://github.com/Yukariin/" />
 
   <include name="include/aosp.xml" />
   <include name="include/x86.xml" />
