@@ -4,8 +4,14 @@
   <!-- Remove old Mesa -->
   <remove-project name="platform/external/mesa3d" />
   <remove-project name="platform/external/libdrm" />
+
+  <!-- Temporary till necessary patches from AOSP master land in Android N branch. We use frameworks-av as a temporary repository for libbcc -->
+  <remove-project name="platform/hardware/intel/audio_media" />
+  <project name="hardware-intel-audio_media" path="hardware/intel/audio_media" remote="android-ia" revision="master" />
   
+  <!-- From yukarin -->
   <project name="device-hp-g62" path="device/hp/g62" remote="yukarin" revision="master" />
+
   <!-- From public kernel.org -->
   <project name="pub/scm/linux/kernel/git/firmware/linux-firmware" path="vendor/linux/firmware" remote="kernelorg" revision="695f2d6d82173f4e322d8f834c9849775778022a" />
 
