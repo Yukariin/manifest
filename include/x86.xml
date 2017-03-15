@@ -3,6 +3,7 @@
 
   <!-- Remove old Mesa -->
   <remove-project name="platform/external/mesa3d" />
+  <remove-project name="platform/external/libdrm" />
   
   <project name="device-hp-g62" path="device/hp/g62" remote="yukarin" revision="master" />
   <!-- From public kernel.org -->
